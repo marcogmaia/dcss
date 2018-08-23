@@ -1,0 +1,46 @@
+ae := autopickup_exceptions
+ae += useless_item
+ae += dangerous_item
+ae += ring of (see invisible|levitation|poison resistance)
+ae += ring of magical power
+ae += ring of wizardry
+ae += ring of (strength|dexterity|intelligence|ice)
+ae += amulet of (rage|magic regeneration)
+ae += scrolls? of (vulnerability)
+ae += potions? of (brilliance|magic|berserk rage)
+ae += potions? of (degeneration|resistance|levitation|invisibility|blood)
+ae += wand of (disintegration|polymorph|acid|random effects|slowing|magic darts|flame|frost|confusion)
+ae += wand of (scattershot)
+ae += wand of (iceblast|enslavement|paralysis|invisibility|lightning|fireball)
+ae += >uselessness, >inaccuracy
+
+confirm_butcher = never
+auto_butcher = very full
+chunks_autopickup = true
+easy_eat_chunks = true
+easy_eat_gourmand = true
+auto_eat_chunks = true
+# easy_eat_contaminated = false
+runrest_stop_message += corpse
+message_colour += mute:You (start|continue|finish|stop) butchering
+message_colour += mute:This raw flesh tastes
+message_colour += mute:You continue eating
+
+autoinscribe += (inedible|mutagenic|forbidden).*(chunk|corpse):noeat
+autofight_stop = 75
+hp_warning = 60
+
+rest_wait_percent = 99
+explore_auto_rest = true
+
+travel_delay = -1
+explore_delay = -1
+rest_delay = -1
+show_travel_trail = true
+# explore_stop  = items,stairs,shops,altars,portals,branches,runed_doors
+# explore_stop += greedy_visited_item_stack
+auto_exclude = oklob plant,statue,curse skull,roxanne
+runrest_ignore_poison  = 2:30
+runrest_ignore_monster = butterfly:1
+trap_prompt = false
+trapwalk_safe_hp = dart:1,needle:1,arrow:1,bolt:1,spear:1,axe:1,blade:1,teleport:1,zot:1,alarm:1
